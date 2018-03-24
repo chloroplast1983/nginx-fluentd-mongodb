@@ -119,7 +119,32 @@ net.ipv4.tcp_syncookies = 0
 </match>
 ```
 
+如果需要进行调试, 在配置文件添加, 输出日志:
+
+```
+<store>
+@type stdout
+</store>
+```
+
 ## 服务器需求
 
-* 一台ecs服务器, 需要装载`nginx`
-* 阿里云的`mongodb`存储
+### 配置
+
+* 一台ecs服务器, 需要装载`nginx`.
+	* `centos 7`
+	* 系统盘: 100G
+	* 数据盘: 100G
+* 阿里云的`mongodb`存储, 先暂时买低配就好, 调试完成在看.
+
+如果不买`mongodb`的话, 则额外给我一台服务器我自己搭建一个`mongodb`即可.
+
+### 需要提供
+
+* 服务器`ip`地址
+* 服务器`root`账户
+* 服务器`root`密码
+* `mongodb`
+	* 地址
+	* 账户
+	* 密码
